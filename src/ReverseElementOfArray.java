@@ -20,5 +20,11 @@ public class ReverseElementOfArray {
             System.out.println("Nhập vào giá trị của phần tử thứ " + (i + 1));
             array[i] = scanner.nextInt();
         }
+
+        //Hiển thị mảng
+        System.out.println("Mảng đã nhập: ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.printf(array[i] + "\t");
+        }
     }
 }
