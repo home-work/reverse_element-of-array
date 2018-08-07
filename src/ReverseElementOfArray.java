@@ -14,6 +14,11 @@ public class ReverseElementOfArray {
             }
         } while (sizeOfArray > 20);
 
-
+        //Nhập giá trị của các phần tử
+        int[] array = new int[sizeOfArray];
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Nhập vào giá trị của phần tử thứ " + (i + 1));
+            array[i] = scanner.nextInt();
+        }
     }
 }
