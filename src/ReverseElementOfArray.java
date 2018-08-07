@@ -26,5 +26,18 @@ public class ReverseElementOfArray {
         for (int i = 0; i < array.length; i++) {
             System.out.printf(array[i] + "\t");
         }
+
+        //Đảo các phần tử của mảng
+        for (int i = 0; i < array.length / 2; i++) {
+            int temp = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[(array.length - 1 - i)] = temp;
+        }
+
+        //Hiển thị mảng sau khi đảo
+        System.out.println("\nMảng sau khi đảo: ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.printf(array[i] + "\t");
+        }
     }
 }
